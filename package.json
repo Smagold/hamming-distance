@@ -7,7 +7,10 @@
   "repository": "math-utils/hamming-distance",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "2",
+    "istanbul": "0"
+  },
   "scripts": {
     "test": "mocha --reporter spec",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
