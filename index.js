@@ -45,8 +45,8 @@ function hexToBinary(s) {
 }
 
 function hammingDistance(a, b) {
-  a = hexToBinary(a);
-  b = hexToBinary(b);
+  /[^01]/.test(a) && (a = hexToBinary(a));
+  /[^01]/.test(b) && (b = hexToBinary(b));
   var count = 0;
   for (var i = 0; i < a.length; i++) if (a[i] !== b[i]) count++;
   return count;
